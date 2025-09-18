@@ -4,7 +4,11 @@ public class Palindrome {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        System.out.println(isPalindrome(input));
+        if (isPalindrome(input)) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not a palindrome");
+        }
     }
     static boolean isPalindrome(String input) {
         return input.equals(reverseString(input));
