@@ -1,9 +1,9 @@
-import java.util.Scanner;
-
 public class Palindrome {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
+        String input = "";
+        for (int i = 0; i < args.length; i++) {
+            input = args[i];
+        }
         if (isPalindrome(input)) {
             System.out.println("Palindrome");
         } else {
