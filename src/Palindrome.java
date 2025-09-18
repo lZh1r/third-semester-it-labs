@@ -1,13 +1,13 @@
 public class Palindrome {
     public static void main(String[] args) {
-        String input = "";
         for (int i = 0; i < args.length; i++) {
-            input = args[i];
-        }
-        if (isPalindrome(input)) {
-            System.out.println("Palindrome");
-        } else {
-            System.out.println("Not a palindrome");
+            String input = args[i];
+            System.out.println("Input: " + input);
+            if (isPalindrome(input)) {
+                System.out.println("Palindrome");
+            } else {
+                System.out.println("Not a palindrome");
+            }
         }
     }
     static boolean isPalindrome(String input) {
