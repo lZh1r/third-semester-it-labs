@@ -15,8 +15,8 @@ public class Palindrome {
     }
     static String reverseString(String input) {
         String result = "";
-        for (char c : input.toCharArray()) {
-            result = c + result;
+        for (int i = input.length() - 1; i >= 0; i--) {
+            result += input.charAt(i);
         }
         return result;
     }
