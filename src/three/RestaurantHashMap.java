@@ -36,6 +36,11 @@ class Order {
     }
 
     @Override
+    public int hashCode() {
+        return date.hashCode() + id + price + Arrays.hashCode(content);
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj ==  this) return true;
         if (obj == null || obj.getClass() != Order.class) return false;
