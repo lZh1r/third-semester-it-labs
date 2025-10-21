@@ -42,7 +42,7 @@ class Order {
         Order other = (Order) obj;
         if (this.id != other.id) return false;
         if (this.price != other.price) return false;
-        if (this.date != other.date) return false;
+        if (!this.date.equals(other.date)) return false;
         if (!Arrays.equals(this.content, other.content)) return false;
         return true;
     }
